@@ -39,12 +39,12 @@
     <td><a href="labtas1.html">Open</a></td>
   </tr
      <tr>
-    <td>05</td>
+    <td>06</td>
     <td>Labtas2</td>
     <td><a href="labtas2.html">Open</a></td>
   </tr>
    <tr>
-    <td>05</td>
+    <td>07</td>
     <td>Labtas3</td>
     <td><a href="labtab3.html">Open</a></td>
   </tr>
