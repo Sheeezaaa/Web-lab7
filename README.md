@@ -5,7 +5,7 @@
 <table border="1">
   <tr>
     <th>#</th>
-    <th>Project Name</th>
+    <th>Project </th>
     <th>Action</th>
   </tr>
 
