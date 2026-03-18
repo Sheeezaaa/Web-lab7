@@ -35,8 +35,18 @@
 
   <tr>
     <td>05</td>
-    <td>Lab 5</td>
-    <td><a href="lab5.html">Open</a></td>
+    <td>Labtas1</td>
+    <td><a href="labtas1.html">Open</a></td>
+  </tr
+     <tr>
+    <td>05</td>
+    <td>Labtas2</td>
+    <td><a href="labtas2.html">Open</a></td>
+  </tr>
+   <tr>
+    <td>05</td>
+    <td>Labtas3</td>
+    <td><a href="labtab3.html">Open</a></td>
   </tr>
 
 </table>
