@@ -1,28 +1,42 @@
 # Web-lab7
 
-| #  |  | Action |
+<h2>💻 Web-lab7</h2>
 
-<br>
- Lab 1      [Open](lab1.html)
- </br>
- <br>
- Lab 2     [Open](lab2.html) 
- </br>
- <br>
- Lab 3     [Open](lab3.html) 
- </br>
- <br>
-Lab 4       [Open](lab4.html)
-</br>
-<br>
-Lab 5       [Open](lab5.html)
-</br>
-<br>
-Labtas1      [Open](labtas1.html)
-</br>
-<br>
-Labtas2      [Open](labtas2.html) |
-</br>
-<br>
-Labtas3      | [Open](labtas3.html) |
-</br>
+<table border="1">
+  <tr>
+    <th>#</th>
+    <th>Project Name</th>
+    <th>Action</th>
+  </tr>
+
+  <tr>
+    <td>01</td>
+    <td>Lab 1</td>
+    <td><a href="lab1.html">Open</a></td>
+  </tr>
+
+  <tr>
+    <td>02</td>
+    <td>Lab 2</td>
+    <td><a href="lab2.html">Open</a></td>
+  </tr>
+
+  <tr>
+    <td>03</td>
+    <td>Lab 3</td>
+    <td><a href="lab3.html">Open</a></td>
+  </tr>
+
+  <tr>
+    <td>04</td>
+    <td>Lab 4</td>
+    <td><a href="lab4.html">Open</a></td>
+  </tr>
+
+  <tr>
+    <td>05</td>
+    <td>Lab 5</td>
+    <td><a href="lab5.html">Open</a></td>
+  </tr>
+
+</table>
