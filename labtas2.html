@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animals</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .carousel-box {
+            position: relative;
+        }
+        .carousel-box img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .controls {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-box img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid bg-dark text-white text-center p-5">
+    <h1>Animal History</h1>
+    <p>Explore animals and their history</p>
+</div>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+
+            <div class="carousel-box">
+                <img id="slider" src="https://picsum.photos/id/237/800/400">
+
+                <button class="btn btn-dark prev" onclick="prevSlide()">❮</button>
+                <button class="btn btn-dark next" onclick="nextSlide()">❯</button>
+            </div>
+
+
+            <div class="controls">
+                <button class="btn btn-success" onclick="playSlider()">Play</button>
+                <button class="btn btn-danger" onclick="pauseSlider()">Pause</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    let images = [
+        "https://picsum.photos/id/237/800/400",
+        "https://picsum.photos/id/1025/800/400",
+        "https://picsum.photos/id/1062/800/400",
+        "https://picsum.photos/id/1074/800/400"
+    ];
+
+    let index = 0;
+    let sliderInterval;
+
+    function showSlide() {
+        document.getElementById("slider").src = images[index];
+    }
+
+    function nextSlide() {
+        index = (index + 1) % images.length;
+        showSlide();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + images.length) % images.length;
+        showSlide();
+    }
+    function playSlider() {
+        if (!sliderInterval) {
+            sliderInterval = setInterval(nextSlide, 3000);
+        }
+    }
+    function pauseSlider() {
+        clearInterval(sliderInterval);
+        sliderInterval = null;
+    }
+    playSlider();
+</script>
+
+</body>
+</html>
